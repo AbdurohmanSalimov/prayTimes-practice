@@ -10,6 +10,11 @@
 		08ED855627F6C7E80073084B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED855527F6C7E80073084B /* AppDelegate.swift */; };
 		08ED855F27F6C7E90073084B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08ED855E27F6C7E90073084B /* Assets.xcassets */; };
 		08ED856227F6C7E90073084B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ED856027F6C7E90073084B /* LaunchScreen.storyboard */; };
+		08ED856A27F6CC7B0073084B /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED856927F6CC7B0073084B /* TabbarVC.swift */; };
+		08ED856D27F6CF8C0073084B /* PrayTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED856B27F6CF8C0073084B /* PrayTimeVC.swift */; };
+		08ED856E27F6CF8C0073084B /* PrayTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ED856C27F6CF8C0073084B /* PrayTimeVC.xib */; };
+		08ED857127F6CF9F0073084B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ED856F27F6CF9F0073084B /* SettingsVC.swift */; };
+		08ED857227F6CF9F0073084B /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ED857027F6CF9F0073084B /* SettingsVC.xib */; };
 		35CB73DB422BB1132E8C0DE8 /* Pods_prayTimes_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A393C01A7F52D2AE3BDB87C /* Pods_prayTimes_practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +24,11 @@
 		08ED855E27F6C7E90073084B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08ED856127F6C7E90073084B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08ED856327F6C7E90073084B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08ED856927F6CC7B0073084B /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		08ED856B27F6CF8C0073084B /* PrayTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTimeVC.swift; sourceTree = "<group>"; };
+		08ED856C27F6CF8C0073084B /* PrayTimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrayTimeVC.xib; sourceTree = "<group>"; };
+		08ED856F27F6CF9F0073084B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		08ED857027F6CF9F0073084B /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		7A393C01A7F52D2AE3BDB87C /* Pods_prayTimes_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prayTimes_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0722492C2549E39687C7C /* Pods-prayTimes practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayTimes practice.debug.xcconfig"; path = "Target Support Files/Pods-prayTimes practice/Pods-prayTimes practice.debug.xcconfig"; sourceTree = "<group>"; };
 		C4C0863A048777EA2476E3D3 /* Pods-prayTimes practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayTimes practice.release.xcconfig"; path = "Target Support Files/Pods-prayTimes practice/Pods-prayTimes practice.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,12 +67,41 @@
 		08ED855427F6C7E80073084B /* prayTimes practice */ = {
 			isa = PBXGroup;
 			children = (
-				08ED855527F6C7E80073084B /* AppDelegate.swift */,
+				08ED857327F6CFA40073084B /* Models */,
+				08ED857427F6CFAB0073084B /* Views */,
+				08ED857527F6CFB10073084B /* Controllers */,
 				08ED855E27F6C7E90073084B /* Assets.xcassets */,
 				08ED856027F6C7E90073084B /* LaunchScreen.storyboard */,
 				08ED856327F6C7E90073084B /* Info.plist */,
 			);
 			path = "prayTimes practice";
+			sourceTree = "<group>";
+		};
+		08ED857327F6CFA40073084B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08ED857427F6CFAB0073084B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08ED856C27F6CF8C0073084B /* PrayTimeVC.xib */,
+				08ED857027F6CF9F0073084B /* SettingsVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08ED857527F6CFB10073084B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08ED855527F6C7E80073084B /* AppDelegate.swift */,
+				08ED856927F6CC7B0073084B /* TabbarVC.swift */,
+				08ED856B27F6CF8C0073084B /* PrayTimeVC.swift */,
+				08ED856F27F6CF9F0073084B /* SettingsVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		448E6FA8C94CED3279B47135 /* Pods */ = {
@@ -143,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08ED856227F6C7E90073084B /* LaunchScreen.storyboard in Resources */,
+				08ED857227F6CF9F0073084B /* SettingsVC.xib in Resources */,
 				08ED855F27F6C7E90073084B /* Assets.xcassets in Resources */,
+				08ED856E27F6CF8C0073084B /* PrayTimeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08ED856A27F6CC7B0073084B /* TabbarVC.swift in Sources */,
+				08ED857127F6CF9F0073084B /* SettingsVC.swift in Sources */,
+				08ED856D27F6CF8C0073084B /* PrayTimeVC.swift in Sources */,
 				08ED855627F6C7E80073084B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
